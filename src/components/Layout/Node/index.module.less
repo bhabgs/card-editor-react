@@ -1,0 +1,29 @@
+.positionRelative {
+  position: relative;
+}
+.card {
+  flex: 1;
+  overflow: hidden;
+  display: flex;
+  .positionRelative();
+
+  &.editor {
+    border: 0.5px solid #ccc;
+    cursor: pointer;
+    &.selected,
+    &:hover {
+      border-width: 2px;
+      border-color: blue;
+    }
+  }
+}
+.cardBox {
+  display: grid;
+  overflow: hidden;
+  .positionRelative();
+  &.selected {
+    border-width: 2px;
+    border-color: blue;
+    border-style: solid;
+  }
+}

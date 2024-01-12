@@ -1,0 +1,41 @@
+.stage {
+  display: flex;
+  .stageBoxCenter {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    .header {
+      height: 30px;
+    }
+    .stageBox {
+      flex: 1;
+      position: relative;
+      overflow: hidden;
+      border: 1px solid #ccc;
+    }
+  }
+
+  .cardListBox {
+    width: 200px;
+  }
+
+  .marker {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    border: 1px dashed #ccc;
+    z-index: 999;
+    display: none;
+    cursor: move;
+  }
+
+  .getparentbutton {
+    position: absolute;
+    width: 10px;
+    height: 5px;
+    background-color: red;
+    z-index: 1;
+  }
+}
